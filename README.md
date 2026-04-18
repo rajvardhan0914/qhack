@@ -1,10 +1,10 @@
 # 🚗 EV Safety System using QNX RTOS
 
 ## 📌 Overview
-This project implements a real-time automotive safety system using QNX RTOS. It integrates multiple subsystems such as Driver Monitoring System (DMS), Battery & Motor Monitoring, and Obstacle Detection to ensure safe vehicle operation. A central control process collects events from all subsystems and makes priority-based decisions in real time. A Python dashboard is used for visualization.
+This project implements a real-time automotive safety system using QNX RTOS. It integrates multiple subsystems such as Driver Monitoring System (DMS), Battery & Motor Monitoring, and Obstacle Detection to ensure safe vehicle operation. A central control process collects events from all subsystems and makes priority-based decisions in real time.
 
 ## 🧠 System Architecture
-DMS Process, Battery Process, and Obstacle Process run independently and communicate with a central Control Process using QNX message passing. The Control Process evaluates all incoming events and executes the highest-priority action. A Python-based UI displays system states and decisions.
+DMS Process, Battery Process, and Obstacle Process run independently and communicate with a central Control Process using QNX message passing. The Control Process evaluates all incoming events and executes the highest-priority action.0
 
 ## ⚙️ Tech Stack
 - C (QNX RTOS) – Real-time backend
@@ -56,9 +56,6 @@ Obstacle → Capture, Detection, Decision threads
 
 ## ⚡ Real-Time Concepts Used
 Preemptive scheduling, priority-based execution, deterministic timing, mutex for shared memory protection, condition variables, and message passing.
-
-## 🖥️ Python Visualization
-The Python dashboard displays driver state, battery status, obstacle alerts, and final control actions. Data is received from QNX using TCP sockets.
 
 ## ▶️ How to Run
 1. Build the project in QNX Momentics.
